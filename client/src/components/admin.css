@@ -1,0 +1,16 @@
+.admin{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-columns: 50px;
+    margin: 10px;
+}
+
+.admin-btns{
+    grid-column: 1;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #d3d3d3;
+}
+
+
+

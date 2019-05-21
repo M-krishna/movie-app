@@ -1,0 +1,64 @@
+.moviecard{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 500px;
+        padding: 10px;
+        margin: 26px;
+}
+
+.imageContainer{
+    grid-column: 1 / 2;
+    border: 3px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+.contentContainer{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contentContainer .name-year{
+    grid-column: 1;
+}
+
+.contentContainer .name-year .movie-name{
+    font-size: 3rem;
+    margin-top: 0;
+    margin-left: 5rem;
+    margin-bottom: 0;
+}
+
+.contentContainer .name-year .movie-year{
+    font-size: 1rem;
+    margin-top: 0;
+    margin-left: 5rem;
+    margin-bottom: 0;
+}
+
+.contentContainer .name-year .movie-genre{
+    font-size: 25px;
+    margin-top: 0;
+    margin-left: 5rem;
+}
+
+.contentContainer .name-year .movie-rating{
+    font-size: 4rem;
+    margin: 5px;
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+.director{
+    font-size: 3rem;
+    margin-left: 5rem;
+    margin-top: 0;
+}
+
