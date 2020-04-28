@@ -1,0 +1,21 @@
+body {
+    background-color: #000000;
+    margin: 100px;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 200px;
+    row-gap: 1em;
+}
+
+.movie-card {
+    height: 200px;
+    width: 200px;
+}
+
+.movie-image {
+    height: 100%;
+    width: 100%;
+}
