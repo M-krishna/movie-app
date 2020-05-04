@@ -8,7 +8,6 @@ const MovieCard = props => {
             <img 
                 src={props.movies.movieImage} 
                 className="movie-image"
-                alt="movie-image"
             />
         </div>
     )
