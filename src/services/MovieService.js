@@ -1,7 +1,8 @@
 import axios from 'axios'
+import config from './config'
 
 const axiosInstance = axios.create({
-    baseURL: 'https://movie-app-back.herokuapp.com/v1/api'
+    baseURL: config.BASE_URL
 })
 
 const getAllMovies = () => {
