@@ -24,7 +24,7 @@ const SingleMovie = props => {
             }
             fetchMovie()
         }
-    })
+    }, [])
     
     return (
         <div style={styles["movie-model"]}>
