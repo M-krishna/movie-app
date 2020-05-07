@@ -27,7 +27,7 @@ const SingleMovie = props => {
     }, [])
     
     return (
-        <div style={styles["movie-model"]}>
+        <div className="movie-model">
             <MovieCard movies={movie}/>
             <div className="movie-details">
                 <h1 style={{color: "#FFF"}}>{movie.name}</h1>
@@ -41,14 +41,6 @@ const SingleMovie = props => {
             </div>
         </div>
     )
-}
-
-const styles = {
-    "movie-model": {
-        display: "grid",
-        gridTemplateColumns: "300px auto",
-        gridAutoRows: "300px"
-    }
 }
 
 export default SingleMovie

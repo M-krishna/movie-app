@@ -23,3 +23,15 @@ body {
     height: 100%;
     width: 100%;
 }
+
+.movie-model {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    .movie-model {
+        grid-template-columns: 300px auto;
+        grid-auto-rows: 200px;
+    }
+}
