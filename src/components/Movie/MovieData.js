@@ -1,11 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 import MovieCard from './MovieCard'
 
 const MovieData = props => {
     return (
-        <MovieCard movies={props.movieData}/>
+        <Link 
+            to={{
+                pathname: `/movie/${props.movieData._id}`,
+                movieData: props.movieData
+            }}
+        >
+            <MovieCard movies={props.movieData}/>
+        </Link>
     )
 }
 

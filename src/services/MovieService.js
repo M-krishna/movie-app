@@ -17,7 +17,20 @@ const getAllMovies = () => {
     })
 }
 
+const getMovie = (id) => {
+    return new Promise((resolve, reject) => {
+        axiosInstance.get(`/movies/${id}`)
+            .then((response) => {
+                resolve(response.data)
+            })
+            .catch(err => {
+                reject(err)
+            })
+    })
+}
+
 
 export {
-    getAllMovies
+    getAllMovies,
+    getMovie
 }
